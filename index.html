@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuerdos de nosotros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="staly.css">
+</head>
+<body>
+    <div class="message">I love you ❤️</div>
+
+    <section class="memory-album">
+        <div class="album-header">
+            <span class="album-badge">Álbum de recuerdos</span>
+            <h2>Nuestros momentos</h2>
+        </div>
+
+        <div class="memory-book" aria-label="Libro de recuerdos">
+            <div class="book-pages">
+                <div class="book-cover" aria-hidden="true">
+                    <span>♥</span>
+                    <strong>Recuerdos<br>de nosotros</strong>
+                    <small>nuestro álbum</small>
+                </div>
+                <div class="photo-gallery">
+                    <img src="fotos/foto01.jpeg" alt="Recuerdo 1" data-message="Te amo muchísimo ❤️">
+                    <img src="fotos/foto02.jpeg" alt="Recuerdo 2" data-message="Gracias por estar en mi vida ❤️">
+                    <img src="fotos/foto03.jpeg" alt="Recuerdo 3" data-message="Eres mi persona favorita 🫶">
+                    <img src="fotos/foto04.jpeg" alt="Recuerdo 4" data-message="Siempre te voy a amar ❤️">
+                    <img src="fotos/foto05.jpeg" alt="Recuerdo 5" data-message="Cada momento contigo es mágico 💞">
+                    <img src="fotos/foto06.jpeg" alt="Recuerdo 6" data-message="Mi niña hermosa ❤️">
+                    <img src="fotos/foto07.jpeg" alt="Recuerdo 7" data-message="Nuestro amor se siente en cada detalle ❤️">
+                    <img src="fotos/foto08.jpeg" alt="Recuerdo 8" data-message="Cada recuerdo contigo vale la pena 💞">
+                    <img src="fotos/foto09.jpeg" alt="Recuerdo 9" data-message="Eres mi cielo en cada momento 🌙">
+                    <img src="fotos/foto10.jpeg" alt="Recuerdo 10" data-message="Te adoro con todo mi corazón 💗">
+                    <img src="fotos/foto11.jpeg" alt="Recuerdo 11" data-message="Nuestra historia es mi favorita 🫶">
+                    <img src="fotos/foto12.jpeg" alt="Recuerdo 12" data-message="Mi lugar favorito es a tu lado 💞">
+                    <img src="fotos/foto13.jpeg" alt="Recuerdo 13" data-message="Tu sonrisa es mi cosa favorita 😊">
+                    <img src="fotos/foto14.jpeg" alt="Recuerdo 14" data-message="Te quiero más de lo que puedo decir 💖">
+                    <img src="fotos/foto15.jpeg" alt="Recuerdo 15" data-message="Siempre quiero vivir momentos como este contigo ❤️">
+                    <img src="fotos/foto16.jpeg" alt="Recuerdo 16" data-message="Cada día contigo es mejor 💕">
+                    <img src="fotos/foto17.jpeg" alt="Recuerdo 17" data-message="Mi amor por ti sigue creciendo ❤️">
+                    <img src="fotos/foto18.jpeg" alt="Recuerdo 18" data-message="Gracias por cada momento juntos ❤️">
+                </div>
+            </div>
+
+            <div class="book-controls">
+                <button class="book-button" id="previous-page" type="button" aria-label="Página anterior">‹</button>
+                <span class="page-counter" id="page-counter">1 / 18</span>
+                <button class="book-button" id="next-page" type="button" aria-label="Página siguiente">›</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="photo-lightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox-content">
+            <button class="lightbox-close" type="button" aria-label="Cerrar">✕</button>
+            <button class="lightbox-nav lightbox-previous" id="lightbox-previous" type="button" aria-label="Foto anterior">‹</button>
+            <img class="lightbox-image" src="" alt="Foto ampliada">
+            <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Foto siguiente">›</button>
+            <p class="lightbox-message">Te amo ❤️</p>
+        </div>
+    </div>
+
+    <div id="bubble-text"></div>
+    <script src="script.js"></script>
+</body>
+</html>
